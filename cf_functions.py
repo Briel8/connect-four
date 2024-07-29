@@ -75,7 +75,6 @@ class ConnectFour:
     def check_win(self,row, column):
         """Checks if the other three, horizontally or vertically are equal 
         to the inserted one. Return True if equal."""
-        up = None
         down = None
         left = None
         right = None
@@ -96,13 +95,7 @@ class ConnectFour:
                 self.winner = self.turn
                 self.running = False
 
-        # Defending against out of bounds errors
-        #if row > 2:
-         #   up = [self.board[row-1][column], self.board[row-2][column], self.board[row-3][column],]
-          #  # Compare up
-           # if (self.board[row][column] == up[0] and up[0] == up[1] and up[1] == up[2]):
-            #    self.winner = self.turn
-             #   self.running = False
+        
         if row < 3:
             down = [self.board[row+1][column], self.board[row+2][column], self.board[row+3][column],]
             # Compare up
