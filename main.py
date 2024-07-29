@@ -1,4 +1,4 @@
-main.pyfrom cf_functions import ConnectFour
+from cf_functions import ConnectFour
 
 running = True
 cf = ConnectFour()
